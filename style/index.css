@@ -1,0 +1,54 @@
+
+.nav-pills {
+    color: black;
+    background-color: white;
+}
+.nav-item :hover {
+    color: hotpink;
+}
+
+.nav-link.active {
+    color: rgb(255, 255, 255);
+    background-color: rgb(159, 159, 159);
+}
+
+.rounded {
+    width: 400px;
+    height: auto;
+}
+
+.heart {
+    color: black;
+    border: none;
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    padding: 30px 10px;
+}
+
+.heart-1 {
+    animation: heart-jump 1s 0s 3;
+}
+
+.heart-2 {
+    animation: heart-jump 1s 1s 3;
+}
+
+.heart-3 {
+    animation: heart-jump 1s 2s 3;
+}
+
+@keyframes heart-jump {
+    0% {
+        transform: translate(0%);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        transform: translate(-100%);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate(0%);
+        animation-timing-function: ease-out;
+    }
+}
